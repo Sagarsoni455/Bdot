@@ -1,0 +1,123 @@
+/* Service Detail Page Specific Styles */
+.service-banner {
+    padding: 140px 0 60px 0;
+    text-align: left; /* Changed for back button alignment */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    align-items: flex-start; /* Changed for back button alignment */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.service-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)); /* Improved overlay */
+}
+
+.service-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.service-banner h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Specific banner backgrounds */
+.banner-manpower { background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7'); }
+.banner-security { background-image: url('../Assets/tijuana-2770121_1280.jpg'); }
+.banner-construction { background-image: url('../Assets/images (1).jpeg'); }
+.banner-pest { background-image: url('../Assets/vecteezy_ai-generated-a-pest-control-worker-in-a-protective-suit_39273125.jpg'); }
+
+.service-page-content {
+    display: flex;
+    gap: 30px;
+    padding: 50px 0; /* Use padding instead of negative margin */
+    position: relative;
+    z-index: 3;
+}
+
+.service-sidebar {
+    flex: 0 0 60px; /* Flex-grow, flex-shrink, flex-basis */
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    align-self: flex-start; /* Aligns item to the top of the flex container */
+    min-height: 300px;
+}
+
+.sidebar-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--primary-red);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.sidebar-text span {
+    color: var(--dark);
+}
+
+.service-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.service-detail-item {
+    background: #ffffff;
+    border-left: 5px solid var(--primary-red);
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.service-detail-item h3 {
+    color: var(--primary-red);
+    margin-bottom: 10px;
+}
+
+.service-detail-item p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+/* Styles for back button */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}

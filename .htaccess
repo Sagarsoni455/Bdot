@@ -1,0 +1,8 @@
+DirectoryIndex Home.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-z-]+)$ $1.html [NC,L]
+
+# Optional: Add a rule for your home page
+RewriteRule ^(home)$ Home.html [L]
