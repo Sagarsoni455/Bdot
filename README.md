@@ -44,7 +44,8 @@ Clone the repository:
 
 Bash
 
-git clone https://github.com/your-username/your-repository.git
+git clone (https://github.com/Sagarsoni455/Bdot.git)
+)
 Navigate to the project directory:
 
 Bash
@@ -54,12 +55,12 @@ Open the website:
 Simply open the index.html file in your preferred web browser.
 
 Live Demo
-You can view a live demo of this project at: https://your-live-demo-url.com
+You can view a live demo of this project at: (https://bdot.org.in/Home)
 
 License
 Distributed under the MIT License. See LICENSE for more information.
 
 Contact
-Your Name - your-email@example.com
+Your Name - Sagar Soni 
 
-Project Link: https://github.com/your-username/your-repository
+
